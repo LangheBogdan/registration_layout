@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  line-height: 1.5;
 }
 
 *,
@@ -10,9 +11,59 @@ html {
 *:after {
   box-sizing: border-box;
 }
+:root {
+  --primary-font: "Roboto Condensed", sans-serif;
+  --bg-success: #0099ff;
+  --divider: #eaeef5;
+  --margin-b: 3rem;
+}
 
+body {
+  font-family: var(--primary-font);
+}
 
 img {
   max-width: 100%;
   display: block;
+}
+
+/*Header Mobile*/
+.masthead {
+  border-bottom: 2px solid var(--divider);
+  margin-bottom: var(--margin-b);
+  padding: 3rem;
+}
+.masthead #overpass {
+  display: none;
+}
+/*Step #steps*/
+
+#steps {
+  padding: 0 3rem;
+}
+/*Step Section .circle*/
+
+.circle {
+  align-items: center;
+  background-color: var(--bg-success);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex: 0 0 auto;
+  font-size: 1.8rem;
+  font-weight: 400;
+  height: 2.9rem;
+  justify-content: center;
+  margin-right: 2rem;
+  width: 2.9rem;
+}
+
+/*Step Section .step- */
+
+.step-one,
+.step-two,
+.step-three {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
 }
