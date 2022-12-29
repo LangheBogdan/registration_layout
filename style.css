@@ -1,0 +1,18 @@
+/*overwrite some defaults*/
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
