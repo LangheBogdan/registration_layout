@@ -9,29 +9,17 @@ $(document).ready(function () {
     $(".hiddenSpan").hide();
     $(".visibleSpan").show();
   });
-  $("#form").validate({
-    rules: {
-      first_name: {
-        required: true,
-      },
-      last_name: {
-        required: true,
-      },
-      email: {
-        required: true,
-        email: true,
-      },
-      phone: {
-        required: true,
-        phoneUS: true,
-      },
-    },
-    submitHandler: function (form) {
-      if ($(form).valid()) {
-        $("#submitBtn").removeClass("disabled").addClass("enabled");
-      } else {
-        $("#submitBtn").removeClass("enabled").addClass("disabled");
-      }
-    },
+  // 	get the value from all text input if all values are  true add class to button on change
+  $("#first_name, #last_name, #user_email, #phone").on("change", function () {
+    if (
+      $("#first_name").val() &&
+      $("#last_name").val() &&
+      $("#user_email").val() &&
+      $("#phone").val()
+    ) {
+      $("#submitBtn").addClass("valid");
+    } else {
+      $("#submitBtn").removeClass("valid");
+    }
   });
 });

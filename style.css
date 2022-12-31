@@ -290,8 +290,9 @@ select {
   background-color: #e4e5e9;
   cursor: not-allowed;
 }
-.enabled {
+.valid {
   background-color: var(--bg-success);
+  color: #fff;
   cursor: pointer;
 }
 .form-row-select {
