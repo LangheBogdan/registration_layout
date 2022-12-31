@@ -59,10 +59,10 @@ img {
   flex: 0 0 auto;
   font-size: 1.8rem;
   font-weight: 400;
-  height: 3.1rem;
+  height: 2.3rem;
   justify-content: center;
   margin-right: 1rem;
-  width: 3.1rem;
+  width: 2.3rem;
 }
 .circle-disabled {
   background-color: var(--disabled-circle_color);
@@ -82,19 +82,19 @@ img {
 .active-heading {
   color: var(--active-font_color);
   font-family: var(--secondary-font);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 .disabled-heading {
   color: var(--disabled-font_color);
   font-family: var(--secondary-font);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
 .lead {
   color: var(--active-font_color);
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 900;
 }
 .lead.lead-disabled {
@@ -102,7 +102,7 @@ img {
 }
 .lead + span {
   color: var(--active-font_color);
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -143,7 +143,7 @@ figure > img {
 }
 .sample > p {
   color: var(--active-font_color);
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .time-zone,
@@ -162,7 +162,7 @@ figure > img {
 .real-estate,
 .amount {
   color: var(--active-font_color);
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 .interest h4,
@@ -197,5 +197,23 @@ p {
 .toggleWrapper {
   text-align: center;
   font-weight: 500;
+  font-size: 1.4rem;
+}
+
+
+/*Create Account section*/
+
+.create-account {
+  padding: 0 3rem;
+}
+.hgroup h1 {
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+  color: var(--active-font_color);
+}
+
+.hgroup h2 {
   font-size: 1.8rem;
+  margin: 0.5rem 0;
+  color: var(--active-font_color);
 }

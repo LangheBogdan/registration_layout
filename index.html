@@ -160,9 +160,16 @@
         </div>
       </section>
       <section class="create-account">
-        <p>Looking to get a job? Register As A Sales Rep.</p>
-        <h1>Create Account</h1>
-        <h2>To Register Your Company</h2>
+        <div class="intro">
+          <p>
+            <span class="disabled-heading">Looking to get a job?</span>
+            <span class="lead lead-disabled"> Register As A Sales Rep.</span>
+          </p>
+        </div>
+        <div class="hgroup">
+          <h1>Create Account</h1>
+          <h2>To Register Your Company</h2>
+        </div>
         <form action="example.com/path" method="post">
           <label for="first_name">First Name</label>
           <input
@@ -205,15 +212,17 @@
             id="promo_code"
             placeholder="Type your promo code"
           />
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10">
-            <g fill="none" fill-rule="evenodd">
-              <path
-                fill="#09F"
-                d="M9.72727.86526c.35056-.42676.9807-.48854 1.40747-.13799.41254.33888.48402.939.17167 1.36413l-.03368.04334-5.75 7c-.36795.44794-1.03466.48779-1.45333.09797l-.03972-.03907-3.25-3.375C.39659 5.42082.40854 4.78777.80636 4.40468c.38456-.37032.98893-.3715 1.37484-.01182l.03912.0385 2.47043 2.56539L9.72727.86526Z"
-              />
-              <path d="M0-1h12v12H0z" />
-            </g>
-          </svg>
+          <span class="circle circle-disabled promoWrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  fill="#09F"
+                  d="M9.72727.86526c.35056-.42676.9807-.48854 1.40747-.13799.41254.33888.48402.939.17167 1.36413l-.03368.04334-5.75 7c-.36795.44794-1.03466.48779-1.45333.09797l-.03972-.03907-3.25-3.375C.39659 5.42082.40854 4.78777.80636 4.40468c.38456-.37032.98893-.3715 1.37484-.01182l.03912.0385 2.47043 2.56539L9.72727.86526Z"
+                />
+                <path d="M0-1h12v12H0z" />
+              </g>
+            </svg>
+          </span>
           <button type="submit" disabled>Next</button>
         </form>
         <a href="#">Log In Instead</a>
