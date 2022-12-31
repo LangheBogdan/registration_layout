@@ -200,11 +200,13 @@ p {
   font-size: 1.4rem;
 }
 
-
 /*Create Account section*/
 
 .create-account {
   padding: 0 3rem;
+}
+.hgroup {
+  margin-bottom: var(--margin-b);
 }
 .hgroup h1 {
   font-size: 2.2rem;
@@ -216,4 +218,43 @@ p {
   font-size: 1.8rem;
   margin: 0.5rem 0;
   color: var(--active-font_color);
+}
+
+.reg-form {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #ffffff;
+  border: 1px solid var(--disabled-circle_color);
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label,
+.select-label-row label {
+  margin-bottom: 15px;
+}
+
+.select-label-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

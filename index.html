@@ -170,41 +170,49 @@
           <h1>Create Account</h1>
           <h2>To Register Your Company</h2>
         </div>
-        <form action="example.com/path" method="post">
-          <label for="first_name">First Name</label>
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            placeholder="Type your first name"
-          />
-          <label for="last_name">Last Name</label>
-          <input
-            type="text"
-            name="last_name"
-            id="last_name"
-            placeholder="Type your last name"
-          />
-          <label for="user_email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="user_email"
-            placeholder="CynthiaJEckles@gmail.com"
-          />
-          <label class="select-label" for="country-code">Country Code</label>
-          <select name="country-code" id="country-code">
-            <option value="0" selected>+1</option>
-          </select>
-          <label for="phone"
-            >Phone Number
+        <form class="reg-form" action="example.com/path" method="post">
+          <div class="form-row">
+            <label for="first_name">First Name</label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Type your first name"
+            />
+          </div>
+          <div class="form-row">
+            <label for="last_name">Last Name</label>
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Type your last name"
+            />
+          </div>
+          <div class="form-row">
+            <label for="user_email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="CynthiaJEckles@gmail.com"
+            />
+          </div>
+          <div class="select-label-row">
+            <label for="phone">Phone Number</label>
+            <label for="country-code"></label>
+            <select name="country-code" id="country-code">
+              <option value="0" selected>+1</option>
+            </select>
+
             <input
               type="tel"
               name="phone"
               id="phone"
               placeholder="(000) 000-0000"
             />
-          </label>
+          </div>
+
           <label for="promo_code">Promo Code</label>
           <input
             type="text"
