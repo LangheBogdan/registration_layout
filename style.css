@@ -271,7 +271,7 @@ select {
   margin-right: 0;
 }
 .form-row-select select {
-  flex: 0 1 45%;
+  flex: 0 1 55%;
   margin-right: 1rem;
   appearance: none;
   text-align: center;
