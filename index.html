@@ -198,28 +198,31 @@
               placeholder="CynthiaJEckles@gmail.com"
             />
           </div>
-          <div class="select-label-row">
-            <label for="phone">Phone Number</label>
-            <label for="country-code"></label>
-            <select name="country-code" id="country-code">
-              <option value="0" selected>+1</option>
-            </select>
-
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="(000) 000-0000"
-            />
+          <div class="form-row">
+            <label for="phone">Phone Number <br /></label>
+            <label for="country-code" style="display: none"></label>
+            <div class="form-row-select">
+              <select name="country-code" id="country-code">
+                <option value="US" selected>+1</option>
+              </select>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="(000) 000-0000"
+              />
+            </div>
           </div>
 
-          <label for="promo_code">Promo Code</label>
-          <input
-            type="text"
-            name="promo_code"
-            id="promo_code"
-            placeholder="Type your promo code"
-          />
+          <div class="form-row">
+            <label for="promo_code">Promo Code</label>
+            <input
+              type="text"
+              name="promo_code"
+              id="promo_code"
+              placeholder="Type your promo code"
+            />
+          </div>
           <span class="circle circle-disabled promoWrapper">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10">
               <g fill="none" fill-rule="evenodd">
