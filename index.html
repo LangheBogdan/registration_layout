@@ -170,36 +170,46 @@
           <h1>Create Account</h1>
           <h2>To Register Your Company</h2>
         </div>
-        <form class="reg-form" action="example.com/path" method="post">
+        <form
+          id="form"
+          class="reg-form"
+          action="example.com/path"
+          method="post"
+        >
           <div class="form-row">
-            <label for="first_name">First Name</label>
+            <label class="required" for="first_name">First Name</label>
             <input
               type="text"
               name="first_name"
               id="first_name"
               placeholder="Type your first name"
+              title="Type your first name"
+              required
             />
           </div>
           <div class="form-row">
-            <label for="last_name">Last Name</label>
+            <label class="required" for="last_name">Last Name</label>
             <input
               type="text"
               name="last_name"
               id="last_name"
               placeholder="Type your last name"
+              title="Type your last name"
+              required
             />
           </div>
           <div class="form-row">
-            <label for="user_email">Email</label>
+            <label class="required" for="user_email">Email</label>
             <input
               type="email"
               name="email"
               id="user_email"
               placeholder="CynthiaJEckles@gmail.com"
+              required
             />
           </div>
           <div class="form-row">
-            <label for="phone">Phone Number <br /></label>
+            <label class="required" for="phone">Phone Number <br /></label>
             <label for="country-code" style="display: none"></label>
             <div class="form-row-select">
               <select name="country-code" id="country-code">
@@ -210,39 +220,56 @@
                 name="phone"
                 id="phone"
                 placeholder="(000) 000-0000"
+                required
               />
             </div>
           </div>
 
           <div class="form-row">
             <label for="promo_code">Promo Code</label>
-            <input
-              type="text"
-              name="promo_code"
-              id="promo_code"
-              placeholder="Type your promo code"
-            />
+            <div class="promo">
+              <input
+                type="text"
+                name="promo_code"
+                id="promo_code"
+                placeholder="Type your promo code"
+                title="Type your promo code"
+              />
+
+              <span class="circle circle-disabled promoWrapper">
+                <svg
+                  id="my-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="5"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      fill="#a7b2c3"
+                      d="M1.45775.182C1.19007-.07083.76813-.05877.51532.20891.27094.46767.27406.87058.51634 1.1255l.02591.02583 3 2.83334c.24807.23428.63104.24236.88842.02423l.02708-.02423 3-2.83334c.26768-.2528.27973-.67474.02693-.94242-.24439-.25876-.6468-.27865-.91516-.05133L6.54225.182 4 2.58283 1.45775.182Z"
+                    />
+                    <path d="M0-2h8v8H0z" />
+                  </g></svg
+              ></span>
+            </div>
           </div>
-          <span class="circle circle-disabled promoWrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10">
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  fill="#09F"
-                  d="M9.72727.86526c.35056-.42676.9807-.48854 1.40747-.13799.41254.33888.48402.939.17167 1.36413l-.03368.04334-5.75 7c-.36795.44794-1.03466.48779-1.45333.09797l-.03972-.03907-3.25-3.375C.39659 5.42082.40854 4.78777.80636 4.40468c.38456-.37032.98893-.3715 1.37484-.01182l.03912.0385 2.47043 2.56539L9.72727.86526Z"
-                />
-                <path d="M0-1h12v12H0z" />
-              </g>
-            </svg>
-          </span>
-          <button type="submit" disabled>Next</button>
+          <button id="submitBtn" class="disabled btn" type="submit" >
+            Next
+          </button>
         </form>
-        <a href="#">Log In Instead</a>
+        <div class="logIn"><a href="#">Log In Instead</a></div>
       </section>
     </main>
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+      integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script src="main.js"></script>
   </body>
