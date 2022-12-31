@@ -30,6 +30,9 @@ img {
   max-width: 100%;
   display: block;
 }
+.text-center {
+  text-align: center;
+}
 
 /*Header Mobile*/
 .masthead {
@@ -170,25 +173,29 @@ p {
 
 #hidden-content {
   display: none;
-
+  overflow: visible;
 }
-#show-more-button {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
+
+.visibleSpan,
+.hiddenSpan {
   color: var(--bg-success);
-  font-weight: 400;
-
 }
 
-#show-more-button svg {
-  /*vertical-align: middle;*/
+.visibleSpan::after {
+  content: url("./registration__assets/creat-down_f.svg");
+  display: inline-block;
   margin-left: 0.5rem;
 }
 
-#hidden-content{
-  overflow: visible;
+.hiddenSpan::after {
+  content: url("./registration__assets/creat-down_f.svg");
+  transform: rotate(180deg);
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.toggleWrapper {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.8rem;
 }
