@@ -1,11 +1,11 @@
 $(document).ready(function () {
   $(".visibleSpan").click(function () {
-    $("#hidden-content").show();
+    $("#hidden-content").slideDown();
     $(".hiddenSpan").show();
     $(".visibleSpan").hide();
   });
   $(".hiddenSpan").click(function () {
-    $("#hidden-content").hide();
+    $("#hidden-content").slideUp();
     $(".hiddenSpan").hide();
     $(".visibleSpan").show();
   });
