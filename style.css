@@ -399,10 +399,10 @@ select {
     padding: 0 6rem;
   }
   .form-row-select select {
-    flex: 0 1 30%;
+    flex: 0 1 47%;
   }
   .form-row-select::after {
-    right: 80%;
+    right: 70%;
   }
   .form-row-select::before {
     top: 37%;
