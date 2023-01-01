@@ -41,4 +41,7 @@ $(document).ready(function () {
   }
 
   $(window).on("resize", updateElementClass);
+  $(window).on("beforeunload", function () {
+    $("input").val("");
+  });
 });

@@ -185,6 +185,7 @@ p {
 .visibleSpan,
 .hiddenSpan {
   color: var(--bg-success);
+  cursor: pointer;
 }
 
 .visibleSpan::after {
@@ -374,11 +375,14 @@ select {
     margin: 0 auto 3rem;
     border: none;
     border-radius: 1rem;
-    padding-bottom: 0.5rem;
+
+  }
+  .toggleWrapper{
+    padding-bottom: 2rem;
   }
   .create-account {
     background-color: #fff;
-    max-width: 60%;
+    max-width: 53%;
     margin: 0 auto;
     border: none;
     border-radius: 1rem;
@@ -388,11 +392,20 @@ select {
     padding: 1rem 3rem;
     margin-bottom: 6rem;
   }
+  .hgroup{
+    padding: 0 6rem;
+  }
+  .reg-form{
+    padding: 0 6rem;
+  }
   .form-row-select select {
     flex: 0 1 30%;
   }
   .form-row-select::after {
     right: 80%;
+  }
+  .form-row-select::before {
+    top: 37%;
   }
   .promo {
     margin-bottom: 3rem;
