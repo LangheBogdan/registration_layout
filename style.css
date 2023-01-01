@@ -33,8 +33,11 @@ img {
 .text-center {
   text-align: center;
 }
+.d-none {
+  display: none;
+}
 main {
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
 }
 /*Header Mobile*/
 .masthead {
@@ -339,4 +342,74 @@ select {
   font-size: 1.8rem;
   font-family: var(--secondary-font);
   color: var(--bg-success);
+}
+
+/*Media Queries*/
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    min-height: calc(100vh - 10.2rem);
+    background-image: url(./registration__assets/registration__pattern.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  main {
+    padding-bottom: 2rem;
+  }
+
+  .masthead {
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+    margin-bottom: 3rem;
+  }
+  .masthead #overpass {
+    display: block;
+  }
+  #steps {
+    background-color: #fff;
+    max-width: 80%;
+    margin: 0 auto 3rem;
+    border: none;
+    border-radius: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .create-account {
+    background-color: #fff;
+    max-width: 60%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 1rem;
+  }
+  .intro p {
+    border-top: none;
+    padding: 1rem 3rem;
+    margin-bottom: 6rem;
+  }
+  .form-row-select select {
+    flex: 0 1 30%;
+  }
+  .form-row-select::after {
+    right: 80%;
+  }
+  .promo {
+    margin-bottom: 3rem;
+  }
+  .tablet-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+  .tablet-view a {
+    display: block;
+    padding: 0;
+  }
+  .tablet-view button {
+    flex: 0 1 150px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }

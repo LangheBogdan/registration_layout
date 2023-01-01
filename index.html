@@ -14,7 +14,7 @@
       src="https://kit.fontawesome.com/9c41fa08b4.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Registration Layout</title>
   </head>
@@ -236,14 +236,12 @@
                 title="Type your promo code"
               />
 
-              <span id="promoWrapper" class="circle circle-disabled ">
+              <span id="promoWrapper" class="circle circle-disabled">
                 <svg
                   width="12px"
                   height="10px"
                   viewBox="0 0 12 10"
-                  version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
                   <title>Icon</title>
                   <g
@@ -289,11 +287,14 @@
               ></span>
             </div>
           </div>
-          <button id="submitBtn" class="disabled btn" type="submit">
-            Next
-          </button>
+          <div id="tabletView" class=" logIn tablet-view">
+            <a class="d-none" href="#">Log In Instead</a>
+            <button id="submitBtn" class="disabled btn" type="submit">
+              Next
+            </button>
+          </div>
         </form>
-        <div class="logIn"><a href="#">Log In Instead</a></div>
+        <div id="logNone" class="logIn"><a href="#">Log In Instead</a></div>
       </section>
     </main>
     <script

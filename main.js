@@ -26,11 +26,19 @@ $(document).ready(function () {
     if ($("#promo_code").val()) {
       console.log($("#promo_code"));
       $("#icon").css("fill", "#0099ff");
-      $('#promoWrapper').css('background-color', '#d9ecff');
+      $("#promoWrapper").css("background-color", "#d9ecff");
     } else {
-      $("#icon").css('fill', '#a7b2c3');
-      $('#promoWrapper').css('background-color', '#d3dde9');
+      $("#icon").css("fill", "#a7b2c3");
+      $("#promoWrapper").css("background-color", "#d3dde9");
     }
   });
-  console.log($("#icon").css("fill"));
+  function updateElementClass() {
+    if ($(window).width() >= 768) {
+      $("#logNone").addClass("d-none");
+    } else {
+      $("#logNone").removeClass("d-none");
+    }
+  }
+
+  $(window).on("resize", updateElementClass);
 });
