@@ -22,4 +22,15 @@ $(document).ready(function () {
       $("#submitBtn").removeClass("valid");
     }
   });
+  $("#promo_code").on("change", function () {
+    if ($("#promo_code").val()) {
+      console.log($("#promo_code"));
+      $("#icon").css("fill", "#0099ff");
+      $('#promoWrapper').css('background-color', '#d9ecff');
+    } else {
+      $("#icon").css('fill', '#a7b2c3');
+      $('#promoWrapper').css('background-color', '#d3dde9');
+    }
+  });
+  console.log($("#icon").css("fill"));
 });
