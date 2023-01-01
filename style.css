@@ -24,6 +24,8 @@ html {
 
 body {
   font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
 }
 
 img {
